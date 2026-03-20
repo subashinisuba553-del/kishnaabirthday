@@ -1,7 +1,62 @@
 <!DOCTYPE html>
 <html>
-<body style="text-align:center; background:pink;">
-  <h1>Happy Birthday kishnaaaaaaa 💖</h1>
-  <button onclick="location.href='page2.html'">Start 🎉</button>
-</body>
-</html>
+<head>
+  <title>Birthday Surprise</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    .bg {
+      background-image: url('bg.jpg');
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.4);
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      color: white;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* ✨ Glow text */
+    h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 10px pink, 0 0 20px hotpink;
+      }
+      100% {
+        text-shadow: 0 0 20px white, 0 0 40px pink;
+      }
+    }
+
+    /* 🎁 Button animation */
+    button {
+      padding: 12px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 25px;
+      background: linear-gradient(to right, pink, hotpink);
+      color: white;
+      cursor: pointer;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% {
